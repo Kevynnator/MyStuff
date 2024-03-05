@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url(../IMGs/blue2.png);
+  background-size: cover;
+}
+
+.side_bar {
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  background: #ecf0f3;
+  padding: 12px;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1, inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+  left: 0; /* Show the sidebar by default */
+}
+
+.side_bar .title {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.side_bar .title .logo {
+  font-size: 27px;
+  font-weight: 600;
+  color: #31344b;
+}
+
+.side_bar ul {
+  margin-top: 35px;
+  list-style: none;
+}
+
+.side_bar ul a {
+  color: #31344b;
+  text-decoration: none;
+  display: block;
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 25px;
+  border-radius: 6px;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  position: relative;
+}
+
+.side_bar ul i {
+  margin-right: 10px;
+}
+
+.media_icons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.media_icons a {
+  position: relative;
+  margin: 0 4px;
+  font-size: 17px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+}
+
+.side_bar ul a:hover:before,
+.media_icons a:hover:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+
+.side_bar ul a:hover:before {
+  border-radius: 6px;
+}
+
+.media_icons a:hover:before {
+  border-radius: 50%;
+}
+
+.side_bar ul a:hover {
+  color: #3498db;
+}
+
+.media_icons a:nth-child(1) {
+  color: #4267b2;
+}
+
+.media_icons a:nth-child(2) {
+  color: #1da1f2;
+}
+
+.media_icons a:nth-child(3) {
+  color: #e1306c;
+}
+
+.media_icons a:nth-child(4) {
+  color: #ff0000;
+}
+
+.label {
+  font-size: 17px;
+  color: #31344b;
+  box-shadow: -3px -3px 7px #ffffff, 3px 3px 5px #ceced1;
+  height: 37px;
+  width: 37px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 37px;
+  cursor: pointer;
+}
+
+.label:hover {
+  box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+  color: #3498db;
+}
+
+#profile-box {
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  display: none;
+}
+
+#profile-box.visible {
+  display: block;
+}
+
+/* style the profile button */
+.context a:nth-child(2) {
+  position: relative;
+  padding-right: 24px;
+}
+
+.context a:nth-child(2):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%230077cc' xmlns='http://www.w3.org/2000/svg'><path d='M11.5 7.5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V8.757l-4.5 4.5a.5.5 0 0 1-1 0l-4.5-4.5a.5.5 0 0 1 .5-.5h1.072a2.5 2.5 0 0 1 2.345 2.317l.03.03a2.5 2.5 0 0 1 2.35 0l6.5-6.5a.5.5 0 0 1 .708 0l6.5 6.5a.5.5 0 0 1-.708.708L14 9.793a2.5 2.5 0 0 1-2.35 2.317l-.03.03z'/></svg>");
+  background-size: cover;
+}
+
+.registration {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../IMGs/blue1.png);
+  background-size: cover;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="password"],
+.container input[type ="contact_number"]
+{
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.collapse {
+  display: none; /* Hide the collapsed element by default */
+
+}
+
+.collapsed {
+  display: block; /* Show the collapsed element when it has the 'collapsed' class */
+  
+}
